@@ -79,7 +79,7 @@ module HPFeeds
       @logger.info("connected to #{@host}, port #{@port}")
       @connected = true
       # set keepalive
-      @socket.setsockopt(Socket::Option.bool(:INET, :SOCKET, :KEEPALIVE, true))
+      #@socket.setsockopt(Socket::Option.bool(:INET, :SOCKET, :KEEPALIVE, true))
     end
 
     def subscribe(*channels, &block)
